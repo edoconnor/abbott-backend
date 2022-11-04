@@ -4,8 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "dev": "npx ts-node app/server.ts",
-    "start": "node app/server.js"
+    "start": "node dist/index.js"
   },
   "keywords": [],
   "author": "",
