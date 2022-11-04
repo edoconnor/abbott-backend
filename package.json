@@ -2,10 +2,10 @@
   "name": "server",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "dev": "npx ts-node src/server.ts",
-    "start": "node src/server.js"
+    "dev": "npx ts-node server.ts",
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
