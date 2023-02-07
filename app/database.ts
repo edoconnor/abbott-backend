@@ -20,7 +20,7 @@ async function applySchemaValidation(db: mongodb.Db) {
   const jsonSchema = {
     $jsonSchema: {
       bsonType: "object",
-      required: ["name", "capital", "postal", "standard", "plates"],
+      required: ["name", "choice1", "choice2", "choice3", "choice4", "capital", "plates", "flags"],
       additionalProperties: false,
       properties: {
         _id: {},
@@ -28,21 +28,33 @@ async function applySchemaValidation(db: mongodb.Db) {
           bsonType: "string",
           description: "'name' is required and is a string",
         },
+        choice1: {
+          bsonType: "string",
+          description: "'choice1' is required and is a string",
+        },
+        choice2: {
+          bsonType: "string",
+          description: "'choice2' is required and is a string",
+        },
+        choice3: {
+          bsonType: "string",
+          description: "'choice3' is required and is a string",
+        },
+        choice4: {
+          bsonType: "string",
+          description: "'choice4' is required and is a string",
+        },
         capital: {
           bsonType: "string",
-          description: "'position' is required and is a string",
-        },
-        postal: {
-          bsonType: "string",
-          description: "'position' is required and is a string",
-        },
-        standard: {
-          bsonType: "string",
-          description: "'position' is required and is a string",
+          description: "'capital' is required and is a string",
         },
         plates: {
           bsonType: "string",
-          description: "'position' is required and is a string",
+          description: "'plates' is required and is a string",
+        },
+        flags: {
+          bsonType: "string",
+          description: "'flags' is required and is a string",
         },
       },
     },
