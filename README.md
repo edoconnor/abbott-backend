@@ -1,4 +1,4 @@
-# Abbott Elementary - Question API, built with Express.
+# Abbott Elementary Question API built with Express.
 
 ![Question API](screenshot.png)
 
